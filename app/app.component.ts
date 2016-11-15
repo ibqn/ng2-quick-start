@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'my-app',
-  template: '<h1>Hello Angular!</h1>'
+  moduleId: module.id,
+  templateUrl: 'app.component.html'
 })
-export class AppComponent { }
+export class AppComponent {
+  showHeading: boolean = true;
+  heroes: string[] = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
+
+  toggleHeading() {
+    this.showHeading = !this.showHeading;
+  }
+}
