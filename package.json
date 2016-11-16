@@ -2,10 +2,10 @@
   "name": "angular-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.json\" ",
     "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup.config.js && node copy-dist-files.js",
     "lite:aot": "lite-server -c aot/bs-config.json",
-    "lite": "lite-server",
+    "lite": "lite-server -c bs-config.json",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },

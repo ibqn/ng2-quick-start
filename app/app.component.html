@@ -2,4 +2,6 @@
 <h1 *ngIf="showHeading">My First Angular App</h1>
 
 <h3>List of Heroes</h3>
-<div *ngFor="let hero of heroes">{{hero}}</div>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes"> {{hero}} </li>
+</ul>
