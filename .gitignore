@@ -1,6 +1,6 @@
 node_modules
 app/*.js*
-ng2-quick-start.sublime-workspace
+*.sublime-workspace
 
 # ignore content of the AOT folder
 aot/*
