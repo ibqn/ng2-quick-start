@@ -6,6 +6,7 @@ var log = require('connect-logger');
  |   http://www.browsersync.io/docs/options/
  */
 module.exports = {
+    port: 8000,
     injectChanges: false, // workaround for Angular 2 styleUrls loading
     filters: ['./**/*.{html,htm,css,js}'],
     watchOptions: {
