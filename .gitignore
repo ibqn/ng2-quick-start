@@ -5,5 +5,5 @@ app/*.js*
 # ignore content of the AOT folder
 aot/*
 # except for the index file and its server configuration
-!aot/bs-config.json
+!aot/bs-config.js
 !aot/index.html
