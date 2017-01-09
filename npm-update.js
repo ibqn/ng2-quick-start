@@ -40,7 +40,7 @@ fs.readFile('./package.json', 'utf8', (err, data) => {
     cmd.get(
       `npm install --save-dev ${key}@latest`,
       data => {
-        stdlog(chalk.blue(`Package '${key}' updated.` ));
+        stdlog(chalk.blue(`Package '${key}' updated.`));
       }
     );
   }
