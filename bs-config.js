@@ -1,6 +1,8 @@
+/* jshint esversion: 6 */
+
 'use strict';
-var fallback = require('connect-history-api-fallback');
-var log = require('connect-logger');
+const fallback = require('connect-history-api-fallback');
+const log = require('connect-logger');
 /*
  | For up-to-date information about the options:
  |   http://www.browsersync.io/docs/options/
