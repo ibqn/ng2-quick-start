@@ -10,7 +10,7 @@ npm start
 ```
 
 ## Ahead-of-Time (AOT) compilation
-Create an AOT build and run the test server with the following command sequence 
+Create an AOT build and run the test server with the following command sequence
 ```
 npm run build:aot
 npm run lite:aot
