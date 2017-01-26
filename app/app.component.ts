@@ -6,10 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  public showHeading = true;
-  heroes: string[] = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
+  private _showHeading = true;
+  public heroes: string[] = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
 
   toggleHeading() {
-    this.showHeading = !this.showHeading;
+    this._showHeading = !this._showHeading;
+  }
+
+  get showHeading(): boolean {
+    return this._showHeading;
   }
 }
