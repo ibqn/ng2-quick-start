@@ -1,5 +1,7 @@
 # ng2-quick-start
-Angular2 quick start example with Just-in-Time (JIT) and Ahead-of-Time (AOT) compilation support
+Angular2 quick start example with Just-in-Time (JIT) and Ahead-of-Time (AOT) compilation support.
+
+This example simply follows the offcial angular AOT comlilation [guide](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html).
 
 ## Getting started with Just-in-Time (JIT)
 Clone the repository and run
