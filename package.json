@@ -11,7 +11,9 @@
     "tsc:w": "tsc -w",
     "e2e:up": "webdriver-manager update",
     "e2e": "tsc && concurrently \"browser-sync start --config bs-config.js --no-open\" \"protractor protractor.config.js\" --kill-others --success first",
-    "e2e:aot": "concurrently \"browser-sync start --config aot/bs-config.js --no-open\" \"protractor protractor.config.js\" --kill-others --success first"
+    "e2e:aot": "concurrently \"browser-sync start --config aot/bs-config.js --no-open\" \"protractor protractor.config.js\" --kill-others --success first",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "test-once": "tsc && karma start karma.conf.js --single-run"
   },
   "repository": "ibqn/ng2-quick-start",
   "dependencies": {
