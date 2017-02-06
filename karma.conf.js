@@ -1,8 +1,8 @@
 module.exports = function(config) {
 
-  var appBase    = 'app/';       // transpiled app JS and map files
-  var appSrcBase = 'app/';       // app source TS files
-  var appAssets  = '/base/app/'; // component assets fetched by Angular's compiler
+  var appBase    = 'src/';       // transpiled app JS and map files
+  var appSrcBase = 'src/';       // app source TS files
+  var appAssets  = '/base/src/app/'; // component assets fetched by Angular's compiler
 
   // Testing helpers (optional) are conventionally in a folder called `testing`
   var testingBase    = 'testing/'; // transpiled test JS and map files
@@ -10,6 +10,7 @@ module.exports = function(config) {
 
   config.set({
     basePath: '',
+    //urlRoot: '/karma/',
     frameworks: ['jasmine'],
 
     plugins: [
@@ -77,8 +78,8 @@ module.exports = function(config) {
     proxies: {
       // required for component assets fetched by Angular's compiler
       '/app/': appAssets,
-      '/app.component.html': '/app/app.component.html',
-      '/app.component.css':  '/app/app.component.css'
+      // required for modules fetched by SystemJS
+      '/base/src/node_modules/': '/base/node_modules/'
     },
 
     exclude: [],
