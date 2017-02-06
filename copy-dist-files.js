@@ -7,9 +7,9 @@ const path = require('path');
 const resources = [
   'node_modules/core-js/client/shim.min.js',
   'node_modules/zone.js/dist/zone.min.js',
-  'styles.css'
+  'src/styles.css'
 ];
 resources.map(from => {
-  const to = 'aot/' + path.basename(from);
+  const to = path.join('aot', path.basename(from));
   fs.createReadStream(from).pipe(fs.createWriteStream(to));
 });

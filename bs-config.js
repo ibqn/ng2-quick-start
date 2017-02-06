@@ -15,9 +15,9 @@ module.exports = {
   watchOptions: {
     ignored: 'node_modules'
   },
-  server: ['./', 'app'],
+  server: ['./', './src', './src/app'],
   middleware: [
-    log({ format: '%date %status %method %url' }),
+    log({ format: '%date %status %method %url (%time)' }),
     fallback({
       index: '/index.html',
       htmlAcceptHeaders: ['text/html', 'application/xhtml+xml'] // systemjs workaround

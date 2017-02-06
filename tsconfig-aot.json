@@ -15,8 +15,13 @@
   },
 
   "files": [
-    "app/app.module.ts",
-    "app/main-aot.ts"
+    "src/app/app.module.ts",
+    "src/main-aot.ts"
+  ],
+
+  "exclude": [
+    "node_modules/",
+    "!node_modules/@types"
   ],
 
   "angularCompilerOptions": {

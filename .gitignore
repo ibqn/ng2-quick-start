@@ -1,5 +1,6 @@
 node_modules
-app/*.js*
+src/**/*.js*
+!src/systemjs.config.js
 *.sublime-workspace
 
 e2e/*.js*
