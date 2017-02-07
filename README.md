@@ -20,7 +20,7 @@ npm run build:aot
 npm run lite:aot
 ```
 
-## Running End-To-End (E2E) tests
+## Running End-to-End (E2E) tests
 First of all prepare the testing environment by downloading chromdriver and selenium standalone server by running
 ```
 npm run e2e:up
