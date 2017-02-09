@@ -33,10 +33,10 @@ const warnFilter = /The 'this' keyword is equivalent to 'undefined' at the top l
 
 //paths are relative to the execution path
 export default {
-  entry: 'src/main-aot.js',
-  dest: 'aot/dist/build.js', // output a single application bundle
+  entry: 'build-aot/src/main-aot.js',
+  dest: 'aot/dist/build.min.js', // output a single application bundle
   sourceMap: true,
-  sourceMapFile: 'aot/dist/build.js.map',
+  sourceMapFile: 'aot/dist/build.min.js.map',
   format: 'iife',
   onwarn: warning => {  // overwite the default warning function
       const str = warning.toString();
