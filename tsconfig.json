@@ -6,6 +6,7 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -15,10 +16,15 @@
     "outDir": "build/"
   },
   "compileOnSave": false,
+
   "exclude": [
+    "**/main-aot.ts",
     "node_modules/**",
-    "!node_modules/@types",
-    "aot/*",
-    "**/*-aot.ts"
+    "!node_modules/@types/**",
+    "aot/**"
+  ],
+
+  "filesGlob": [
+    "src/**/*.ts"
   ]
 }

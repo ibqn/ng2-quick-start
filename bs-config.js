@@ -15,7 +15,7 @@ module.exports = {
   watchOptions: {
     ignored: 'node_modules'
   },
-  server: ['.', 'src', 'src/app', 'build/src'],
+  server: ['.', 'src', 'build/src'],
   middleware: [
     log({ format: '%date %status %method %url (%time)' }),
     fallback({
