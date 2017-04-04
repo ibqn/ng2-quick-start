@@ -3,7 +3,8 @@ Angular2 quick start example with Just-in-Time (JiT) and Ahead-of-Time (AoT) com
 
 This example simply follows the offcial angular AoT comlilation [guide](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html).
 
-![](ng2-quick-start.png?raw=true | width=100)
+
+![](ng2-quick-start.png?raw=true)
 
 ## Getting started with Just-in-Time (JiT)
 Clone the repository and run
